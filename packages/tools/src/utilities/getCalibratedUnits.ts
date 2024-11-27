@@ -4,16 +4,35 @@ const { CalibrationTypes } = Enums;
 const PIXEL_UNITS = 'px';
 
 const SUPPORTED_REGION_DATA_TYPES = [
-  1, // Tissue
+  1,
+  2,
+  3,
+  4, // Tissue
 ];
 
 const SUPPORTED_LENGTH_VARIANT = [
-  '3,3', // x: cm  &  y:cm
+  '3,3',
+  '4,7', // x: cm & y:cm
 ];
 
 const SUPPORTED_PROBE_VARIANT = [
-  '4,3', // x: seconds  &  y : cm
+  '4,3',
+  '4,7', // x: seconds & y : cm
 ];
+
+const UNIT_MAPPING = {
+  0: 'px',
+  1: 'percent',
+  2: 'dB',
+  3: 'cm',
+  4: 'seconds',
+  5: 'hertz',
+  6: 'dB/seconds',
+  7: 'cm/sec',
+  8: 'cm\xb2',
+  9: 'cm\xb2/s',
+  0xc: 'degrees',
+};
 
 const UNIT_MAPPING = {
   0: 'px',
